@@ -7,5 +7,5 @@ Repository contains the sources of RockyLinux WSL Application.
 * `DistroLauncher` - Sources to build `WSL` application distro.
 
 ## Current releases:
- - [RockyLinux 9](https://github.com/rctzxy/RockyLinux-WSL/releases/tag/9.1-20230215)
+ - [RockyLinux 9](https://github.com/rctzxy/RockyLinux-WSL/releases/tag/9.2-20230513)
  - [RockyLinux 8](https://github.com/rctzxy/RockyLinux-WSL/releases/tag/8.7-20230215)
