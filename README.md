@@ -8,4 +8,4 @@ Repository contains the sources of RockyLinux WSL Application.
 
 ## Current releases:
  - [RockyLinux 9](https://github.com/rctzxy/RockyLinux-WSL/releases/tag/9.2-20230513)
- - [RockyLinux 8](https://github.com/rctzxy/RockyLinux-WSL/releases/tag/8.7-20230215)
+ - [RockyLinux 8](https://github.com/rctzxy/RockyLinux-WSL/releases/tag/8.8-20230518)
