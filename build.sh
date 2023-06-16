@@ -4,8 +4,8 @@
 ARCH_X86="x86_64"
 ARCH_ARM="aarch64"
 OS_MAJOR_VER="8"
-OS_FULL_VER="8.7"
-ROOTFS_VER="Base-8.7-20230215.0"
+OS_FULL_VER="8.8"
+ROOTFS_VER="Base-8.8-20230518.0"
 
 ROOTFS_FN_X86="Rocky-${OS_MAJOR_VER}-GenericCloud-${ROOTFS_VER}.${ARCH_X86}.qcow2"
 ROOTFS_URL_X86="https://dl.rockylinux.org/pub/rocky/${OS_FULL_VER}/images/${ARCH_X86}/${ROOTFS_FN_X86}"
@@ -89,7 +89,7 @@ mkdir out
 mv -f ${LNCR_FN_X86} ./out/${LNCR_ZIPFN}
 mv -f install.tar.gz ./out/
 pushd out
-zip ../dist/RockeyLinux${OS_MAJOR_VER}.x64.zip ./*
+zip ../dist/RockyLinux${OS_MAJOR_VER}.x64.zip ./*
 popd
 
 # Clean up
@@ -136,7 +136,7 @@ mkdir out
 mv -f ${LNCR_FN_ARM} ./out/${LNCR_ZIPFN}
 mv -f install.tar.gz ./out/
 pushd out
-zip ../dist/RockeyLinux${OS_MAJOR_VER}.arm64.zip ./*
+zip ../dist/RockyLinux${OS_MAJOR_VER}.arm64.zip ./*
 popd
 
 # Clean up
