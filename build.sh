@@ -89,7 +89,7 @@ mkdir out
 mv -f ${LNCR_FN_X86} ./out/${LNCR_ZIPFN}
 mv -f install.tar.gz ./out/
 pushd out
-zip ../dist/RockeyLinux${OS_MAJOR_VER}.x64.zip ./*
+zip ../dist/RockyLinux${OS_MAJOR_VER}.x64.zip ./*
 popd
 
 # Clean up
@@ -136,7 +136,7 @@ mkdir out
 mv -f ${LNCR_FN_ARM} ./out/${LNCR_ZIPFN}
 mv -f install.tar.gz ./out/
 pushd out
-zip ../dist/RockeyLinux${OS_MAJOR_VER}.arm64.zip ./*
+zip ../dist/RockyLinux${OS_MAJOR_VER}.arm64.zip ./*
 popd
 
 # Clean up
