@@ -57,8 +57,8 @@ wget --no-verbose ${LNCR_URL_X86} -O ${LNCR_FN_X86}
 sudo mkdir mntfs
 sudo modprobe nbd
 sudo qemu-nbd -c /dev/nbd0 --read-only ./${ROOTFS_FN_X86}
-waitFile /dev/nbd0p4 "a" 30
-sudo mount -o ro /dev/nbd0p4 mntfs
+waitFile /dev/nbd0p5 "a" 30
+sudo mount -o ro /dev/nbd0p5 mntfs
 
 # Clone the qcow2 image contents to a writable directory
 sudo cp -a mntfs install
@@ -66,7 +66,7 @@ sudo cp -a mntfs install
 # Unmount the qcow2 image
 sudo umount mntfs
 sudo qemu-nbd -d /dev/nbd0
-waitFile /dev/nbd0p4 "d" 30
+waitFile /dev/nbd0p5 "d" 30
 sudo rmmod nbd
 sudo rmdir mntfs
 
@@ -105,8 +105,8 @@ wget --no-verbose ${LNCR_URL_ARM} -O ${LNCR_FN_ARM}
 sudo mkdir mntfs
 sudo modprobe nbd
 sudo qemu-nbd -c /dev/nbd0 --read-only ./${ROOTFS_FN_ARM}
-waitFile /dev/nbd0p4 "a" 30
-sudo mount -o ro /dev/nbd0p4 mntfs
+waitFile /dev/nbd0p5 "a" 30
+sudo mount -o ro /dev/nbd0p5 mntfs
 
 # Clone the qcow2 image contents to a writable directory
 sudo cp -a mntfs install
@@ -114,7 +114,7 @@ sudo cp -a mntfs install
 # Unmount the qcow2 image
 sudo umount mntfs
 sudo qemu-nbd -d /dev/nbd0
-waitFile /dev/nbd0p4 "d" 30
+waitFile /dev/nbd0p5 "d" 30
 sudo rmmod nbd
 sudo rmdir mntfs
 
