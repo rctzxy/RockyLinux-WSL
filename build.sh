@@ -4,8 +4,8 @@
 ARCH_X86="x86_64"
 ARCH_ARM="aarch64"
 OS_MAJOR_VER="9"
-OS_FULL_VER="9.2"
-ROOTFS_VER="Base-9.2-20230513.0"
+OS_FULL_VER="9.3"
+ROOTFS_VER="Base-9.3-20231113.0"
 
 ROOTFS_FN_X86="Rocky-${OS_MAJOR_VER}-GenericCloud-${ROOTFS_VER}.${ARCH_X86}.qcow2"
 ROOTFS_URL_X86="https://dl.rockylinux.org/pub/rocky/${OS_FULL_VER}/images/${ARCH_X86}/${ROOTFS_FN_X86}"
